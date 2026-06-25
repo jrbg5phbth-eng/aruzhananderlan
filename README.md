@@ -129,6 +129,33 @@ const musicBtn=document.getElementById("musicBtn");
 musicBtn.addEventListener("click",()=>{
 if(music.paused){music.play();musicBtn.innerHTML="🔇 Музыканы өшіру";}
 else{music.pause();musicBtn.innerHTML="🎵 Музыканы қосу";}
+  html,body{
+overflow-x:hidden;
+width:100%;
+}
+
+@media (max-width:768px){
+
+.frame{
+left:8px !important;
+right:8px !important;
+top:8px !important;
+bottom:8px !important;
+}
+
+.corner{
+font-size:18px !important;
+}
+
+.hero{
+padding:40px 20px !important;
+}
+
+.names{
+font-size:52px !important;
+}
+
+}
 });
 </script>
 </body>
